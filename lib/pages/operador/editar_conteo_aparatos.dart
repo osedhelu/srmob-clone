@@ -96,11 +96,11 @@ class _EditarConteoAparatosPageState extends State<EditarConteoAparatosPage> {
           return AlertDialog(
             title: Text(
               "Muestreo",
-              style: Theme.of(context).textTheme.headline,
+              style: Theme.of(context).textTheme.headline5,
             ),
             content: Text(
               'Recuerde que debe separar $numeroMuestras muestra${numeroMuestras > 1 ? 's' : ''}',
-              style: Theme.of(context).textTheme.display1,
+              style: Theme.of(context).textTheme.headline4,
               softWrap: true,
             ),
             actions: <Widget>[
@@ -159,7 +159,7 @@ class _EditarConteoAparatosPageState extends State<EditarConteoAparatosPage> {
               top: 18,
               child: AutoSizeText(
                 value,
-                style: Theme.of(context).textTheme.display3,
+                style: Theme.of(context).textTheme.headline5,
                 textAlign: TextAlign.right,
                 maxLines: 1,
                 softWrap: true,
@@ -191,7 +191,7 @@ class _EditarConteoAparatosPageState extends State<EditarConteoAparatosPage> {
                       child: AutoSizeText(
                         widget.aparato['nombre'],
                         maxLines: 1,
-                        style: Theme.of(context).textTheme.display2,
+                        style: Theme.of(context).textTheme.headline5,
                       )),
                 ),
                 Divider(),
@@ -216,7 +216,7 @@ class _EditarConteoAparatosPageState extends State<EditarConteoAparatosPage> {
                       child: TextFormField(
                         initialValue: '${this.widget.conteo['cantidad']}',
                         inputFormatters: [
-                          WhitelistingTextInputFormatter.digitsOnly
+                          FilteringTextInputFormatter.digitsOnly
                         ],
                         validator: (value) {
                           if (value.isEmpty) {
@@ -253,7 +253,7 @@ class _EditarConteoAparatosPageState extends State<EditarConteoAparatosPage> {
                     "Actualizar",
                     style: Theme.of(context)
                         .textTheme
-                        .display1
+                        .headline4
                         .copyWith(color: Colors.white),
                   ),
                   onPressed: () async {
@@ -343,7 +343,7 @@ class _EditarConteoAparatosPageState extends State<EditarConteoAparatosPage> {
                           "Ocurrio un error inesperado, intente nuevamente.\n si el problema persiste contacte al administrador copiando el siguiente código de error: $error",
                           style: Theme.of(context)
                               .textTheme
-                              .body2
+                              .bodyText2
                               .copyWith(color: Theme.of(context).primaryColor),
                         ),
                         duration: Duration(seconds: 3),
@@ -358,7 +358,7 @@ class _EditarConteoAparatosPageState extends State<EditarConteoAparatosPage> {
                     "Cancelar",
                     style: Theme.of(context)
                         .textTheme
-                        .display1
+                        .headline4
                         .copyWith(color: Colors.white),
                   ),
                   onPressed: () {

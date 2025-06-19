@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-
 class ToastWidget extends StatelessWidget {
-  
   final String title;
   final String description;
 
   const ToastWidget({this.title, this.description});
 
   @override
-  Widget build(BuildContext context) { 
+  Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.bottomCenter,
       child: Card(
@@ -18,24 +16,25 @@ class ToastWidget extends StatelessWidget {
           shrinkWrap: true,
           children: <Widget>[
             Container(
-              color: Theme.of(context).accentColor,
-              child: Padding(
-                padding: EdgeInsets.all(7.5),
-                child: Text(
-                  title,
-                  style: Theme.of(context).textTheme.display1.copyWith(color: Colors.black),
-                  softWrap: true,              
-                ),
-              )
-            ),
+                color: Theme.of(context).accentColor,
+                child: Padding(
+                  padding: EdgeInsets.all(7.5),
+                  child: Text(
+                    title,
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline4
+                        .copyWith(color: Colors.black),
+                    softWrap: true,
+                  ),
+                )),
             Padding(
-              padding: EdgeInsets.all(10.0),
-              child: Text(
-                description,
-                style: Theme.of(context).textTheme.body1,
-                softWrap: true,
-              )
-            ),                        
+                padding: EdgeInsets.all(10.0),
+                child: Text(
+                  description,
+                  style: Theme.of(context).textTheme.bodyText1,
+                  softWrap: true,
+                )),
           ],
         ),
       ),

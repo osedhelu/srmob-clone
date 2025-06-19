@@ -123,7 +123,7 @@ class _EditarMuestraAnalistaState extends State<EditarMuestraAnalistaPage> {
             builder: (BuildContext mContext, AsyncSnapshot mSnapshot) {
               if (mSnapshot.hasData && mSnapshot.data != null) {
                 return AutoSizeText("${mSnapshot.data['id'] ?? ''}",
-                    style: Theme.of(context).textTheme.display1,
+                    style: Theme.of(context).textTheme.headline4,
                     textAlign: TextAlign.right,
                     maxLines: 1,
                     softWrap: true);
@@ -282,7 +282,7 @@ class _EditarMuestraAnalistaState extends State<EditarMuestraAnalistaPage> {
                                   initialValue:
                                       '${this._muestra['pprBr'] ?? ''}',
                                   inputFormatters: [
-                                    WhitelistingTextInputFormatter.digitsOnly
+                                    FilteringTextInputFormatter.digitsOnly
                                   ],
                                   validator: (value) {
                                     if (value.isEmpty) {
@@ -317,7 +317,7 @@ class _EditarMuestraAnalistaState extends State<EditarMuestraAnalistaPage> {
                                   initialValue:
                                       '${this._muestra['incertidumbre'] ?? ''}',
                                   inputFormatters: [
-                                    WhitelistingTextInputFormatter(
+                                    FilteringTextInputFormatter.allow(
                                         RegExp(r"(\d+)([.]?\d*)?"))
                                   ],
                                   validator: (value) {

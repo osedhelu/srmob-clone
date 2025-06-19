@@ -110,7 +110,7 @@ class _ListadoFraccionesPageState extends State<ListadoFraccionesPage> {
                       message,
                       style: Theme.of(context)
                           .textTheme
-                          .body2
+                          .bodyText2
                           .copyWith(color: Theme.of(context).primaryColor),
                     ),
                     duration: Duration(seconds: 3),
@@ -152,7 +152,7 @@ class _FraccionWidget extends StatelessWidget {
       child: ListTile(
         title: Text(
           fraccion['id'] ?? '',
-          style: Theme.of(context).textTheme.headline,
+          style: Theme.of(context).textTheme.headline5,
         ),
         isThreeLine: true,
         subtitle: Column(
@@ -216,7 +216,7 @@ class _FraccionWidget extends StatelessWidget {
                 message,
                 style: Theme.of(context)
                     .textTheme
-                    .body2
+                    .bodyText2
                     .copyWith(color: Theme.of(context).primaryColor),
               ),
               duration: Duration(seconds: 3),

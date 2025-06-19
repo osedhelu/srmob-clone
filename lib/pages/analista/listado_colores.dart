@@ -55,7 +55,7 @@ class _ListadoColoresPageState extends State<ListadoColoresPage> {
         child: ListTile(
           title: Text(
             color,
-            style: Theme.of(context).textTheme.headline,
+            style: Theme.of(context).textTheme.headline5,
           ),
           onTap: () async {
             DocumentReference aRef =
@@ -102,7 +102,7 @@ class _ListadoColoresPageState extends State<ListadoColoresPage> {
                   "Ocurrio un error inesperado, intente nuevamente.\n si el problema persiste contacte al administrador copiando el siguiente código de error: $error",
                   style: Theme.of(context)
                       .textTheme
-                      .body2
+                      .bodyText2
                       .copyWith(color: Theme.of(context).primaryColor),
                 ),
                 duration: Duration(seconds: 3),

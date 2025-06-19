@@ -1,9 +1,13 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=C:\Users\Usuario\dev\flutter
-FLUTTER_APPLICATION_PATH=D:\Proyectos\sr-mob-3-0-4\smart-raee-mob
-FLUTTER_TARGET=lib\main.dart
+FLUTTER_ROOT=/Users/osedhelu/fvm/versions/3.0.3
+FLUTTER_APPLICATION_PATH=/Users/osedhelu/proyectos/examples/srmob-clone
+COCOAPODS_PARALLEL_CODE_SIGN=true
+FLUTTER_TARGET=lib/main.dart
 FLUTTER_BUILD_DIR=build
-SYMROOT=${SOURCE_ROOT}/../build\ios
-FLUTTER_FRAMEWORK_DIR=C:\Users\Usuario\dev\flutter\bin\cache\artifacts\engine\ios
 FLUTTER_BUILD_NAME=3.0.4
 FLUTTER_BUILD_NUMBER=36
+EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386
+DART_OBFUSCATION=false
+TRACK_WIDGET_CREATION=false
+TREE_SHAKE_ICONS=false
+PACKAGE_CONFIG=.dart_tool/package_config.json
