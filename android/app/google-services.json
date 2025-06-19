@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "678091016891",
+    "firebase_url": "https://smart-raee.firebaseio.com",
+    "project_id": "smart-raee",
+    "storage_bucket": "smart-raee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678091016891:android:dc5ab238a7175774",
+        "android_client_info": {
+          "package_name": "com.ecocomputo.araee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678091016891-8md16ennvqnk5filmpgkcaqijipptu05.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ecocomputo.araee",
+            "certificate_hash": "11c7c3acb76bc867035aca44f7ab181aa3a254b4"
+          }
+        },
+        {
+          "client_id": "678091016891-s775518l2hd1gq0ep0rg3v3rug8vn2qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWdVPfEZM6cNAEOrJr3K66bEZm5U95Ch4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678091016891-s775518l2hd1gq0ep0rg3v3rug8vn2qa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678091016891-7dmrpab5qe7k1cdj96g0d6olfo85v8hm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ecocomputo.araee"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
